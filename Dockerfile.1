@@ -1,0 +1,6 @@
+FROM busybox:latest
+
+COPY file-we-need /
+COPY file-we-dont-need /
+
+RUN rm /file-we-dont-need
